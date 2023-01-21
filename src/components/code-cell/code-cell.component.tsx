@@ -24,7 +24,6 @@ const CodeCell = () => {
   };
 
   const handleChange: OnChange = (value) => {
-    console.log(value);
     setInput(() => value as string);
   };
 
@@ -121,15 +120,6 @@ const CodeCell = () => {
           defaultLanguage="javascript"
           onMount={handleEditorDidMount}
         />
-        {/* <button
-          style={{
-            top: 3,
-            right: 3,
-            position: "absolute",
-          }}
-        >
-          Use Example
-        </button> */}
       </div>
       <div
         style={{
