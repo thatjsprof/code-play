@@ -104,8 +104,8 @@ const compilePathPlugin = (input: string) => {
         f`;
 
         const responseObject: esbuild.OnLoadResult = {
-          loader: "jsx",
           contents,
+          loader: "jsx",
           resolveDir: new URL("./", request.responseURL).pathname,
         };
 
