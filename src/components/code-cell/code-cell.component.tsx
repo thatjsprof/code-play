@@ -45,7 +45,7 @@ const CodeCell = () => {
           "process.env.NODE_ENV": '"development"',
           global: "window",
         },
-        target: ["chrome58", "firefox57", "safari11", "edge16"],
+        // target: ["chrome58", "firefox57", "safari11", "edge16"],
       });
 
       setCode(result.outputFiles[0].text);
